@@ -42,9 +42,9 @@ let cityname= inputcity.value;
 //     });
 
 let wather ={
-    apikey:"f7e7c28995103e02319c21768554b4ab",
+    apikey:""your Api key ",
     featchwather: function(city){
-        fetch( `http://api.openweathermap.org/data/2.5/weather?q=${city},uk&APPID=f7e7c28995103e02319c21768554b4ab`)
+        fetch( `http://api.openweathermap.org/data/2.5/weather?q=${city},uk&APPID=${apikey}`)
         .then((responce)=>responce.json())
         .then((data)=>{
             console.log(data)
